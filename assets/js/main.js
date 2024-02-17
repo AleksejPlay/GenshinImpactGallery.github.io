@@ -23,3 +23,14 @@ function ChangeID(newActive){
 
     MoveOut();
 }
+
+
+const toggleBtn = document.getElementById("toggle-btn");
+const toggleBtnIcon = document.querySelector('.toggle-btn i');
+const dropDownMenu = document.querySelector('.dropdown-menu');
+
+console.log(toggleBtn)
+
+toggleBtn.onclick = function() {
+    dropDownMenu.classList.toggle('open');
+}

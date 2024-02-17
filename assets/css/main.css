@@ -1,10 +1,6 @@
 body{
     margin: 0;
 }
-.main{
-    display: flex;
-    flex-direction: column;
-}
 #myVideo {
     position: relative;
     right: 0;
@@ -31,14 +27,12 @@ body{
     z-index: 0;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
     position: absolute;
-    top: 100vh;
+    top: 108vh;
     left: 50%;
     width: 100%;
-    min-height: 200px;
-    transform: translate(-50%, -360px);
+    transform: translate(-50%, -350px);
     color: whitesmoke;
     font-size: 50px;
     font-family: Playfair Display SC;
@@ -46,8 +40,43 @@ body{
 
 .scroll-down-img{
     width: 7%;
-    height: 7%;
+    height: 1rem;
 }
+
+.dropdown-menu{
+    z-index: 999;
+    position: fixed;
+    margin: 70px auto;
+    right: 2rem;
+    width: 300px;
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+    height: 155px;
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu li a{
+    text-decoration: none;
+    font-size: 1.47rem;
+    font-family: Roboto;
+    color: #f2f2f2;
+}
+.dropdown-menu li a:hover{
+    color: #cab601;
+} 
 
 .navbar img{
     float: left;
@@ -60,17 +89,44 @@ body{
     color: #f2f2f2;
     margin: 20px 30px;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 1.47rem;
     font-family: Roboto;
     font-weight: bold;
+    text-shadow: 3px 3px 2px #505050;
 }
 
 .navbar{
     z-index: 999;
+    max-width: 100%;
+    display: flex;
     overflow:visible;
     position: fixed;
     width: 100%;
-    height: 75px;
-    top: 0;
+    height: 6.5vh;
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar #toggle-btn{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: end;
+}
+
+@media (max-width: 992px){
+    .navbar a, #box{
+        display: none;
+    }
+    .navbar img{
+        float:none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+    .navbar #toggle-btn{
+        display:flex;
+    }
 }
