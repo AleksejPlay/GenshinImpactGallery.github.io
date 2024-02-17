@@ -1,25 +1,76 @@
 body{
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    margin: 0;
 }
-
+.main{
+    display: flex;
+    flex-direction: column;
+}
 #myVideo {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
 } 
-
-.topbar{
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+#Home{
+    position: relative;
+    width: 100%;
+    height: 977px;
+    overflow:hidden;
 }
-.navbar{
-    margin: 0 15px !important;
-    font-size: 15px;
-    font-family: Pacifico;
+#Gallery{
+    display: flex;
+    flex-direction: column;
+    overflow:visible;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.poster-content{
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    top: 100vh;
+    left: 50%;
+    width: 100%;
+    min-height: 200px;
+    transform: translate(-50%, -360px);
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: Playfair Display SC;
+}
+
+.scroll-down-img{
+    width: 7%;
+    height: 7%;
+}
+
+.navbar img{
+    float: left;
+    left: 0px;
+}
+.navbar a{
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    color: #f2f2f2;
+    margin: 20px 30px;
     text-decoration: none;
+    font-size: 23px;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.navbar{
+    z-index: 999;
+    overflow:visible;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
