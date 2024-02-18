@@ -40,7 +40,7 @@ body{
 
 .scroll-down-img{
     width: 7%;
-    height: 1rem;
+    height: 7%;
 }
 
 .dropdown-menu{
@@ -107,7 +107,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar #toggle-btn{
+.navbar .toggle-btn{
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
@@ -126,7 +126,7 @@ body{
         margin-left: auto;
         margin-right: auto;
     }   
-    .navbar #toggle-btn{
+    .navbar .toggle-btn{
         display:flex;
     }
 }

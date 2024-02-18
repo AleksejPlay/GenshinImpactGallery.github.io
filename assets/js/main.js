@@ -25,12 +25,7 @@ function ChangeID(newActive){
 }
 
 
-const toggleBtn = document.getElementById("toggle-btn");
-const toggleBtnIcon = document.querySelector('.toggle-btn i');
-const dropDownMenu = document.querySelector('.dropdown-menu');
-
-console.log(toggleBtn)
-
-toggleBtn.onclick = function() {
+function DropDown(){
+    var dropDownMenu = document.querySelector(".dropdown-menu");
     dropDownMenu.classList.toggle('open');
 }
