@@ -16,10 +16,10 @@
     </head>
     <body>
         <header>
-            <div class="navbar">
+            <div class="navbar" id="navbar">
                 <img src="assets/graphic/GenshinImpact.jpg">
-                <a href="#Home" id="active" onmouseover="MoveIn(this)" onmouseout="MoveOut()" onclick="ChangeID(this)">HOME</a>
-                <a href="#Gallery" id="" onmouseover="MoveIn(this)" onmouseout="MoveOut()" onclick="ChangeID(this)" >GALLERY</a>
+                <a href="#Home" id="active" class="Home1" onmouseover="MoveIn(this)" onmouseout="MoveOut()" onclick="ChangeID(this)">HOME</a>
+                <a href="#Gallery" id="" class="Gallery1" onmouseover="MoveIn(this)" onmouseout="MoveOut()" onclick="ChangeID(this)" >GALLERY</a>
                 <a href="https://www.hoyolab.com/accountCenter/postList?id=152677066" id="" onmouseover="MoveIn(this)" onmouseout="MoveOut()" >HOYOLAB PAGE</a>
                 <div id="box" style="position: absolute; z-index: 1; transition: all 0.4s ease-in-out 0s; background-color: rgb(5, 206, 220); height: 5px; left: 378px; width: 67px; top: 0px;"></div>
                 <div class="toggle-btn">
@@ -35,7 +35,7 @@
             </aside>
         </header>
         <div class="main">
-            <div id="Home"> 
+            <div id="Home" onmouseover="ScrollIn(this.id)"> 
                 <div class="poster-start">
                     <video autoplay muted loop id="myVideo">
                         <source src="assets/graphic/poster-video.mp4" type="video/mp4">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
             </div>
-            <section id="Gallery">
+            <section id="Gallery" onmouseover="ScrollIn(this.id)">
                 <div style="background: url(assets/graphic/GalleryBackground.jpg) no-repeat center/cover; height: 910px;">
                 </div>
             </section>

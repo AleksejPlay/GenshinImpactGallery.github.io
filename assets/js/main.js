@@ -18,9 +18,7 @@ function MoveOut(){
 function ChangeID(newActive){
     lastActive = document.getElementById("active");
     lastActive.removeAttribute('id');
-
     newActive.setAttribute("id" , "active");
-
     MoveOut();
 }
 
@@ -28,4 +26,18 @@ function ChangeID(newActive){
 function DropDown(){
     var dropDownMenu = document.querySelector(".dropdown-menu");
     dropDownMenu.classList.toggle('open');
+}
+
+function ScrollIn(el){
+    var div = document.getElementById("navbar");
+    var newEl = el.concat("1");
+    var children = div.children;
+    var funcTag = null;
+    for(var i=0; i<children.length; i++){
+        var child = children[i];
+        if(child.classList.contains(newEl)){
+            funcTag = child;
+        }
+    }
+    ChangeID(funcTag);
 }
