@@ -131,3 +131,21 @@ body{
     }
 }
 
+.regions{
+    width: 100%;
+    height: 75%;
+    max-width: 1800px;
+    top: 50%;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.regions div{
+    width: 23%;
+    height: 50rem;
+    border-radius: 30px
+}
