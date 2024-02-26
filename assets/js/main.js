@@ -43,9 +43,15 @@ function ScrollIn(el){
 }
 
 function RegionOver(el){
-	
+	var regionSelectHoverImg = el.querySelector("img");
+    regionSelectHoverImg.style.width = "100%";
+    var regionSelectHoverP = el.querySelector("p");
+    regionSelectHoverP.style.display = "none";
 }
 
 function RegionOut(el){
-	
+    var regionSelectHoverImg = el.querySelector("img");
+    regionSelectHoverImg.style.width = "0px";
+    var regionSelectHoverP = el.querySelector("p");
+    regionSelectHoverP.style.display = "block";
 }
