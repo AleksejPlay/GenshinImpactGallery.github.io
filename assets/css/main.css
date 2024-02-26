@@ -130,3 +130,135 @@ body{
         display:flex;
     }
 }
+
+.regions{
+    width: 100%;
+    height: 75%;
+    max-width: 1800px;
+    top: 50%;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.regions div{
+    width: 23%;
+    height: 50rem;
+    border-radius: 30px;
+}
+
+.liyue{
+    font-family: Roboto;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.monstadt{
+    font-family: Roboto;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.inazuma{
+    font-family: Roboto;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.sumeru{
+    font-family: Roboto;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.sumeru p{
+    position: absolute;
+    margin-left: 8%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.inazuma p{
+    position: absolute;
+    margin-left: 8%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.monstadt p{
+    position: absolute;
+    margin-left: 8%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.liyue p{
+    position: absolute;
+    margin-left: 9%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-shadow: 5px 5px rgb(0, 0, 0);
+}
+
+.sumeru img{
+    transition: height 0.2s linear;
+    object-fit: cover;
+    display: none;
+}
+
+.inazuma img{
+    position: relative;
+    width: 100%;
+    height: 0%;
+    transition: height 0.2s linear;
+    object-fit: cover;
+}
+
+.monstadt img{
+    transition: height 0.2s linear;
+    object-fit: cover;
+    display: flex;
+}
+
+.liyue img{
+    transition: height 0.2s linear;
+    object-fit: cover;
+    display: flex;
+}
+
+.sumeru:hover{
+    .sumeru img{
+        object-fit: cover;
+        display: flex;
+    }
+}
+
+.inazuma:hover{
+    .inazuma img{
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+.monstadt:hover{
+    .monstadt img{
+        object-fit: cover;
+        display: flex;
+    }
+}
+
+.liyue:hover{
+    .liyue img{
+        object-fit: cover;
+        display: flex;
+    }
+}
