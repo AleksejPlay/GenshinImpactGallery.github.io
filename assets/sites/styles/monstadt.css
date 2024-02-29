@@ -104,6 +104,16 @@ body{
   margin: 0;
 }
 
+.back-btn{
+    text-decoration: none;
+    padding: 1.3rem;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
 
 .footer{
     z-index: 999;

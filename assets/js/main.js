@@ -55,3 +55,8 @@ function RegionOut(el){
     var regionSelectHoverP = el.querySelector("p");
     regionSelectHoverP.style.display = "block";
 }
+
+function ToMainPage(){
+    var mainPage = document.querySelector("index.html");
+    window.location.href = mainPage;
+}
