@@ -56,7 +56,6 @@ function RegionOut(el){
     regionSelectHoverP.style.display = "block";
 }
 
-function ToMainPage(){
-    var mainPage = document.querySelector("index.html");
-    window.location.href = mainPage;
+function ChangePage(page){
+    window.location.href = page;
 }
