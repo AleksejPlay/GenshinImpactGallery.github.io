@@ -82,6 +82,88 @@ body{
     padding-bottom: 4rem;
 }
 
+.content-img #miko{
+    height: auto;
+    width: 35%;
+
+    z-index: 1;
+    right: 0px;
+    bottom: auto;
+    bottom: 0;
+    object-fit:cover;
+    position: fixed;
+    padding-right: 10.5rem;
+    padding-bottom: 4rem;
+}
+
+.content-img #raiden{
+    height: auto;
+    width: 37%; 
+
+    z-index: 1;
+    right: 0px;
+    bottom: auto;
+    bottom: 0;
+    object-fit:cover;
+    position: fixed;
+    padding-right: 10.5rem;
+    padding-bottom: 4rem;
+}
+
+.content-img #alhaitham{
+    height: auto;
+    width: 30%; 
+
+    z-index: 1;
+    right: 0px;
+    bottom: auto;
+    bottom: 0;
+    object-fit:cover;
+    position: fixed;
+    padding-right: 15rem;
+    padding-bottom: 4rem;
+}
+
+.content-img #nahida{
+    height: auto;
+    width: 35%; 
+
+    z-index: 1;
+    right: 0px;
+    bottom: auto;
+    bottom: 0;
+    object-fit:cover;
+    position: fixed;
+    padding-right: 15rem;
+    padding-bottom: 4rem;
+}
+.content-img #hu-tao{
+    height: auto;
+    width: 35%; 
+
+    z-index: 1;
+    right: 0px;
+    bottom: auto;
+    bottom: 0;
+    object-fit:cover;
+    position: fixed;
+    padding-right: 15rem;
+    padding-bottom: 4rem;
+}
+
+.content-img #zhongli{
+    height: auto;
+    width: 37%; 
+
+    z-index: 1;
+    right: 0px;
+    bottom: auto;
+    bottom: 0;
+    object-fit:cover;
+    position: fixed;
+    padding-right: 15rem;
+    padding-bottom: 4rem;
+}
 
 .content-text{
     width: 40%;
